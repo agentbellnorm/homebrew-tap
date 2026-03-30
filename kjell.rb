@@ -5,20 +5,20 @@
 class Kjell < Formula
   desc "Shell command classifier for AI coding agents"
   homepage "https://github.com/agentbellnorm/kjell"
-  version "0.3.1"
+  version "0.4.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/agentbellnorm/kjell/releases/download/v0.3.1/kjell_0.3.1_darwin_amd64.tar.gz"
-      sha256 "2050f02737bfe6c3b89b4438dd045e805f207b77f8890ef494a27f2456e704df"
+      url "https://github.com/agentbellnorm/kjell/releases/download/v0.4.0/kjell_0.4.0_darwin_amd64.tar.gz"
+      sha256 "6f6f3bc881c08440caab71f68eb618665e74501266802e7900a6a9c9e901482f"
 
       define_method(:install) do
         bin.install "kjell"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/agentbellnorm/kjell/releases/download/v0.3.1/kjell_0.3.1_darwin_arm64.tar.gz"
-      sha256 "27488d3c3f669e9fde2f68a401b7c57be0ac179c3852587d6e57da9ca67f987b"
+      url "https://github.com/agentbellnorm/kjell/releases/download/v0.4.0/kjell_0.4.0_darwin_arm64.tar.gz"
+      sha256 "9c2dc6ccb7859f4ce559b9c8d72a0fe552bc258271c2a74b60316dd7982f8831"
 
       define_method(:install) do
         bin.install "kjell"
@@ -28,15 +28,15 @@ class Kjell < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/agentbellnorm/kjell/releases/download/v0.3.1/kjell_0.3.1_linux_amd64.tar.gz"
-      sha256 "24bd7b6215b9dd0759ae07c9224f59a881ccc4a0ffe006330ca74000c4da87ce"
+      url "https://github.com/agentbellnorm/kjell/releases/download/v0.4.0/kjell_0.4.0_linux_amd64.tar.gz"
+      sha256 "a557825ac3a2cf23938c05b936f81ca9a43991750471fcbdec9e07823f7dd8d3"
       define_method(:install) do
         bin.install "kjell"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/agentbellnorm/kjell/releases/download/v0.3.1/kjell_0.3.1_linux_arm64.tar.gz"
-      sha256 "f35640019b77735d2237d59f617da7b3d0db54d97619622dbdb5b68491b5fed1"
+      url "https://github.com/agentbellnorm/kjell/releases/download/v0.4.0/kjell_0.4.0_linux_arm64.tar.gz"
+      sha256 "f1360a5cac58c4a948936c0714e60e9591a57766093f9f8749b725d9473357e6"
       define_method(:install) do
         bin.install "kjell"
       end
